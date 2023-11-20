@@ -17,3 +17,5 @@ end
 
 require('kdc.packer')
 require('kdc.remap')
+require('kdc.set')
+require('kdc.autocmd')
