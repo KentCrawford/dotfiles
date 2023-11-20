@@ -1,5 +1,6 @@
 vim.g.mapleader = ","
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("v", "<leader>s", ":sort<CR>")
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
