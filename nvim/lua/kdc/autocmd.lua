@@ -17,6 +17,11 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
 })
 
 vim.api.nvim_create_autocmd({"FileType"}, {
+  pattern = {"sql"},
+  command = "setlocal commentstring=--\\ %s"
+})
+
+vim.api.nvim_create_autocmd({"FileType"}, {
   pattern = {"html", "xml", "xslt", "css", "sql", "javascript", "lua"},
   callback = function(ev)
     vim.opt.tabstop = 2
